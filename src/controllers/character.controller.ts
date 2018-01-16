@@ -12,7 +12,6 @@ export class CharacterController {
 		if(!user) { err.push('User name needs to be provided.') }
 		if(err.length) { return new HttpException(err, HttpStatus.BAD_REQUEST) }
 		const characters = await this.char.findCharacters(user)
-		console.log(characters)
 		if(characters.length) {
 			return characters
 		} else {
