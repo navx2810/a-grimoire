@@ -12,7 +12,7 @@ export class CharacterComponent {
 	async findCharacters(user: string) {
 		let c = await Character.findAll({
 			where: {
-				user: { [Op.eq]: user }
+				user
 			}
 		})
 		return c
