@@ -19,6 +19,13 @@ export class CharacterController {
 		}
 	}
 
+	@Get(":id")
+	async getCharacter(@Param("id") id) {
+		let err = []
+		const character = await this.char.findCharacter(id)
+		return character
+	}
+
 	@Post()
 	async create(@Body() dao: {id?: number, user: string, meta: string }): Promise<any> {
 		let errs = []

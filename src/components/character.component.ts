@@ -9,6 +9,13 @@ export class CharacterComponent {
 		if(c) { return c }
 	}
 
+	async findCharacter(id: number) {
+		let c = await Character.find({
+			where: { id }
+		})
+		return c
+	}
+
 	async findCharacters(user: string) {
 		let c = await Character.findAll({
 			where: {
