@@ -1,24 +1,32 @@
-# dependencies
-/node_modules
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
 
-# IDE
-/.idea
-/.awcache
-/.vscode
+# Visual Studio Code
+.vscode
 
-# misc
-npm-debug.log
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# example
-/quick-start
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
 
-# tests
-/test
-/coverage
-/.nyc_output
-
-# dist
-/dist
-
-# Do not include development SQLite databases
-*.sqlite
+# Visual Studio 2015
+.vs/
